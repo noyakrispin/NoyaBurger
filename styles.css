@@ -1,0 +1,211 @@
+html,
+body,
+#container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+/* class */
+#container {
+  /* table */
+  display: grid;
+  background-image: url(images/footerBackground.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-image: url("background.jpg"); */
+  /* background-color: rgb(249, 255, 162); */
+  /* 15% - header, footer 70% - aside, main */
+  grid-template-rows: 12% 76% 12%;
+  grid-template-columns: repeat(12fr);
+}
+
+h1 {
+  font-size: 50px;
+}
+
+header {
+  background-image: url(images/title.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30% 100%;
+
+  height: 100%;
+  grid-column: 12 span;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside {
+  background-color: white;
+  height: 100%;
+  grid-column: 7 span;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  background-image: url(images/background.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+  grid-column: 5 span;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer {
+  height: 100%;
+  grid-column: 12 span;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(images/footerBackground.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ban-up {
+  background-color: sandybrown;
+  width: 25%;
+  height: 10%;
+  border-radius: 50px 50px 5px 5px;
+  border-style: solid;
+  border-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ban-down {
+  background-color: sandybrown;
+  width: 25%;
+  height: 4%;
+  border-radius: 15px 15px 50px 50px;
+  border-style: solid;
+  border-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tomato {
+  background-color: tomato;
+  width: 170px;
+  height: 10px;
+  border-radius: 60px 60px 20px 20px;
+  border-style: solid;
+  border-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#tomatoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#meats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#lettuces {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.meat {
+  background-color: rgba(58, 7, 7, 0.849);
+  width: 170px;
+  height: 17px;
+  border-radius: 40px;
+  border-style: solid;
+  border-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lettuce {
+  background-color: rgba(15, 235, 99, 0.849);
+  width: 180px;
+  height: 8px;
+  border-radius: 40px;
+  border-style: solid;
+  border-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+table {
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+tr:hover {
+  background-image: url(images/footerBackground.jpeg);
+}
+
+#price-style {
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#price {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+#git-logo{
+  width: 15px;
+}
+
+#linkedin-logo{
+  width: 17px;
+}

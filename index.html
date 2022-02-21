@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/logo.jpeg" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@noya_burger</title>
+  </head>
+  <body>
+    <div id="container">
+      <header></header>
+
+      <aside>
+        <div id="buttons">
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Add</th>
+                <th>Name</th>
+                <th>Remove</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td>Bans 🥯 - 10$</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <button
+                    id="tomato-plus-button"
+                    onclick='plus("tomatoes", "tomato",  "tomato-plus-button","tomato-minus-button", 5)'
+                  >
+                    +
+                  </button>
+                </td>
+                <td>Tomato 🍅 - 5$</td>
+                <td>
+                  <button
+                    id="tomato-minus-button"
+                    onclick='minus("tomatoes", "tomato",  "tomato-plus-button","tomato-minus-button", 5)'
+                  >
+                    -
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button
+                    id="lettuce-plus-button"
+                    onclick='plus("lettuces", "lettuce", "lettuce-plus-button","lettuce-minus-button", 7)'
+                  >
+                    +
+                  </button>
+                </td>
+                <td>Lettuce 🥬 - 7$</td>
+                <td>
+                  <button
+                    id="lettuce-minus-button"
+                    onclick='minus("lettuces", "lettuce", "lettuce-plus-button","lettuce-minus-button", 7)'
+                  >
+                    -
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button
+                    id="meat-plus-button"
+                    onclick='plus("meats", "meat","meat-plus-button","meat-minus-button", 30)'
+                  >
+                    +
+                  </button>
+                </td>
+                <td>Meat 🥩 - 30$</td>
+                <td>
+                  <button
+                    id="meat-minus-button"
+                    onclick='minus("meats", "meat","meat-plus-button","meat-minus-button", 30)'
+                  >
+                    -
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <span id="price-style">Price💲:</span>
+          <br />
+          <span id="price"></span>
+        </div>
+      </aside>
+      <main>
+        <div class="ban-up"></div>
+        <!-- <div class="tomato">Tomato</div>
+        <div class="lettuce">lettuce</div>
+        <div class="meat">meat</div> -->
+
+        <div id="tomatoes"></div>
+        <div id="lettuces"></div>
+        <div id="meats"></div>
+        <div class="ban-down"></div>
+      </main>
+      <footer>
+        <p>
+          ©All rights reserved To Noya Krispin
+          <br />
+          <img id="git-logo" src="images/github.jpeg" />
+          <a href="https://github.com/noyakrispin/noyaburger">Source code</a>
+
+          <img id="linkedin-logo" src="images/linkedin.jpeg" />
+          <a href="https://www.linkedin.com/in/noya-krispin/">Linkedin</a>
+        </p>
+      </footer>
+    </div>
+    <script src="site.js"></script>
+  </body>
+</html>
